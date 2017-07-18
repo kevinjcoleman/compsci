@@ -26,3 +26,27 @@ while input != 'quit'
   gets.chomp
 end
 ```
+
+### Definite loops
+Loops where there is a defined amount of loops that will happen.
+```
+1.upto(9) do |i|
+  p i
+end
+```
+
+### Indefinite loops
+```
+input = ''
+while input != 'quit'
+  p "type \"quit\" to stop"
+  gets.chomp
+end
+```
+
+### Pseudorandom Numbers
+Numbers that, although they are derived from predictable and well-defined algorithms, mimic the properties of numbers chosen at random.
+
+
+### Priming a Loop
+Initializing variables before a loop to “prime the pump” and guarantee that the loop is entered.
