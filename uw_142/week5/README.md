@@ -1,5 +1,5 @@
 # Monday notes
-Fence post algorithm.
+### Fence post algorithm.
 - Add fence post before the loop.
 - Add fence post after the loop.
 - ie:
@@ -17,8 +17,8 @@ for item
 end
 ```
 
-Sentinel loop
-- loop with a value that makes it stop.
+### Sentinel loop
+Loop with a value that makes it stop.
 ```
 input = ''
 while input != 'quit'
