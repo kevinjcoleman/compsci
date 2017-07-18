@@ -4,8 +4,8 @@ public class Birthday {
   public static void main(String[] args) {
     Scanner console = new Scanner(System.in);
     intro();
-    int currentDayOfYear = dayMonthInputMethod(console, "Please enter today's date:");
-    int birthdayDayOfYear = dayMonthInputMethod(console, "Please enter your birthday:");
+    int currentDayOfYear = dayMonthInput(console, "Please enter today's date:");
+    int birthdayDayOfYear = dayMonthInput(console, "Please enter your birthday:");
     birthdayMessage(currentDayOfYear, birthdayDayOfYear);
     System.out.print("August 16th was the day that Sports Illustrated was published for the first time.");
   }
@@ -17,7 +17,7 @@ public class Birthday {
   }
 
   public static void birthdayMessage(int currentDay, int birthdayDay) {
-    if (currentDay == birthdayDay) { 
+    if (currentDay == birthdayDay) {
       System.out.println("Happy birthday!");
     } else if ( birthdayDay - currentDay == 1 ) {
       System.out.println("Wow, your birthday is tomorrow!");
@@ -36,7 +36,7 @@ public class Birthday {
     }
   }
 
-  public static int dayMonthInputMethod(Scanner console, String greeting) {
+  public static int dayMonthInput(Scanner console, String greeting) {
     //Print greeting and then grab month/day.
     System.out.println(greeting);
     int month = getUserIntInput(console, "What is the month (1-12)? ");
